@@ -148,6 +148,17 @@ git diff [版本索引号] <文件名>  #将工作区中的文件和本地库历
 
 - **创建新分支 `git branch <branch_name>`**
 
+- **删除本地分支 `git branch -D branch_name`**
+
+- **创建远程分支**
+
+  ```shell
+  git checkout -b branch_name #首先创建本地分支 分支名为branch_name
+  git push --set-uupstream origin branch_name  #将创建的本地分支上传并创建远程分支
+  ```
+
+- **删除远程分支 `git push origin --delete branch_name `**
+
 - **从当前分支转换到另一个分支 `git checkout <second_branch_name>`**
 
 - **合并分支**
