@@ -73,6 +73,18 @@ git init
   git commit -m "注释" <filenamne>
   ```
 
+**修改commit 信息**
+
+**刚刚commit没有push**
+
+```shell
+git commit --amend
+```
+
+**打开commit修改界面 使用vi操纵**
+
+
+
 ## 版本的前进和后退
 
 **查看当前本地库的历史记录：**
@@ -265,3 +277,20 @@ git diff [版本索引号] <文件名>  #将工作区中的文件和本地库历
     ```
 
   - **注意：此时的commit 千万不要加文件名**
+
+## git运用中遇到的各种问题
+
+### linux下遇到该问题：
+
+```shell
+Username for 'https://github.com': zhouchongbo
+Password for 'https://zhouchongbo@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/zhouchongbo/c_code.git/'
+```
+
+**解决办法：**
+
+https://blog.csdn.net/qq_34634812/article/details/120007383?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1-120007383-blog-122389126.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1-120007383-blog-122389126.pc_relevant_aa&utm_relevant_index=1
+
